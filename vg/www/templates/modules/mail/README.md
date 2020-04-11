@@ -1,0 +1,25 @@
+# Отправка писем с формы обратной связи на почту администратора по SMTP
+
+При работе использует php, html, js. Может работать на любых самописных сайтах, сайтах на CMS и в обычных html шаблонах. Исходники используют composer и phpmailer.
+
+## Инструкция
+
+### Посмотреть на [YouTube](https://www.youtube.com/watch?v=qPhIKe2Cc7w)
+
+  - Скачайте архив [https://github.com/VladimiravGav/vg](https://github.com/VladimiravGav/vg)
+  - Распакуйте архив на свой сайт, папка "vg" должна находиться в корне сайта, где находится файл index.html или index.php
+  - Настройте файл [/vg/system/defines.php](https://github.com/VladimiravGav/vg/system/defines.php) , в нем необходимо указать данные для SMTP подключения и указать e-mail администратора, на который будут приходить письма
+  - Вставьте в файл index.html, index.php или в шаблон вашего сайта, перед закрывающимся тегом </body> код который подключит скрипт
+```html
+<script src="/vg/www/templates/modules/mail/js/mail.js"></script>
+```
+  - Надйдите вашу форму в шаблоне и добавьте в нее класс SendMail, убедитесь что стоит method="post", и что на кнопке присутствует type="submit"
+### Пример формы
+```html
+<form class="SendMail" method="post">
+	<input type="hidden" name="type_name" value="Скрытое поле, здесь можно написать название формы или страницы, чтобы отличать разные форнмы">
+	<input type="text" name="Имя" placeholder="Имя">
+	<input type="email" name="email" placeholder="Почта">
+	<button type="submit">Отправить сообщение</button>
+</form>
+```
