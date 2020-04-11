@@ -17,7 +17,7 @@
 ### Пример формы
 ```html
 <form class="SendMail" method="post">
-	<input type="hidden" name="type_name" value="Скрытое поле, здесь можно написать название формы или страницы, чтобы отличать разные форнмы">
+	<input type="hidden" name="type_name" value="Скрытое поле, здесь можно написать название формы или страницы, чтобы отличать разные формы">
 	<input type="text" name="Имя" placeholder="Имя">
 	<input type="email" name="email" placeholder="Почта">
 	<button type="submit">Отправить сообщение</button>
