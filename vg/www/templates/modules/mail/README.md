@@ -9,7 +9,7 @@
   - Скачайте архив [https://github.com/VladimiravGav/vg](https://github.com/VladimiravGav/vg)
   - Распакуйте архив на свой сайт, папка "vg" должна находиться в корне сайта, где находится файл index.html или index.php
   - Настройте файл [/vg/system/defines.php](https://github.com/VladimiravGav/vg/system/defines.php) , в нем необходимо указать данные для SMTP подключения и указать e-mail администратора, на который будут приходить письма
-  - Вставьте в файл index.html, index.php или в шаблон вашего сайта, перед закрывающимся тегом </body> код который подключит скрипт
+  - Вставьте в файл index.html, index.php или в шаблон вашего сайта, перед закрывающимся тегом /body код который подключит скрипт
 ```html
 <script src="/vg/www/templates/modules/mail/js/mail.js"></script>
 ```
