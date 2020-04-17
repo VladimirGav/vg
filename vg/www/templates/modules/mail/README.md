@@ -4,7 +4,7 @@
 
 ## Инструкция
 
-### Посмотреть на [YouTube](https://www.youtube.com/watch?v=qPhIKe2Cc7w)
+### Посмотреть на [YouTube](https://www.youtube.com/watch?v=YlpkDVUyhVA)
 
   - Скачайте архив [https://github.com/VladimiravGav/vg](https://github.com/VladimiravGav/vg)
   - Распакуйте архив на свой сайт, папка "vg" должна находиться в корне сайта, где находится файл index.html или index.php
@@ -13,7 +13,7 @@
 ```html
 <script src="/vg/www/templates/modules/mail/js/mail.js"></script>
 ```
-  - Надйдите вашу форму в шаблоне и добавьте в нее класс SendMail, убедитесь что стоит method="post", и что на кнопке присутствует type="submit"
+  - Найдите вашу форму в шаблоне и добавьте в нее класс SendMail, убедитесь что стоит method="post", и что на кнопке присутствует type="submit"
 ### Пример формы
 ```html
 <form class="SendMail" method="post">
