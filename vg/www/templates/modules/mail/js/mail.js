@@ -13,6 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
                         $this.innerHTML = '<h2>'+res1.data+'</h2>';
                     } else {
                         alert(res1.data);
+                        if($('.g-recaptcha').length){
+                            grecaptcha.reset();
+                        }
                     }
                 }
             }

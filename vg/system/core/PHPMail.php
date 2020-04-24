@@ -120,9 +120,14 @@ class PHPMail
 
         $mail->setFrom($this->smtp_username, $this->smtp_username);
         $mail->addReplyTo($this->smtp_username, $this->smtp_username);
-        if (!empty($attachment)) {
-            foreach ($attachment as $file_name => $file_path) {
-                $mail->addAttachment($file_path);
+        if (isset($attachment) && is_array($attachment)) {
+            foreach ($attachment as $file_path) {
+                //$m->AddAttachment($file_path, pathinfo($file_path, PATHINFO_BASENAME));
+                //$mail->addAttachment($file_path);
+                if(file_exists($file_path)){
+                    $mail->addStringAttachment(file_get_contents($file_path), pathinfo($file_path, PATHINFO_BASENAME));
+                    unset($file_path);
+                }
             }
         }
         $mail->addAddress($address);
